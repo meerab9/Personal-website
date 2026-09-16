@@ -1,0 +1,148 @@
+/* =========================================================
+   Custom CSS — Sage Green Palette
+   Loaded AFTER Bootstrap so these rules can override defaults
+   ========================================================= */
+
+/* -----------------------------
+   Custom colors (CSS variables)
+   ----------------------------- */
+:root {
+  --sage-darkest: #3f4a3d;
+  --sage-dark: #5c6e52;
+  --sage: #8a9a7b;
+  --sage-light: #c6d1bb;
+  --sage-lightest: #eef1e9;
+  --accent: #d8c8a3;
+  --text-color: #2f362c;
+}
+
+/* -----------------------------
+   ELEMENT SELECTOR
+   Applies base typography and color to every <body>
+   ----------------------------- */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: var(--sage-lightest);
+  color: var(--text-color);
+  line-height: 1.6;
+}
+
+/* ELEMENT SELECTOR: custom typography for headings */
+h1,
+h2,
+h3 {
+  font-family: Georgia, 'Times New Roman', serif;
+  color: var(--sage-darkest);
+}
+
+/* -----------------------------
+   BOOTSTRAP OVERRIDE #1
+   Bootstrap's default link color is blue (#0d6efd).
+   This overrides it to fit the sage green palette.
+   ----------------------------- */
+a {
+  color: var(--sage-dark);
+}
+
+a:hover {
+  color: var(--sage-darkest);
+}
+
+/* -----------------------------
+   BOOTSTRAP OVERRIDE #2
+   Bootstrap's .bg-dark utility defaults to near-black (#212529).
+   Overridden here so the navbar and footer use the sage palette
+   instead of Bootstrap's default dark gray/black.
+   ----------------------------- */
+.bg-dark {
+  background-color: var(--sage-darkest) !important;
+}
+
+/* -----------------------------
+   BOOTSTRAP OVERRIDE #3
+   Bootstrap's .btn-primary is blue by default (#0d6efd).
+   Overridden with the sage palette so buttons match the site.
+   ----------------------------- */
+.btn-primary {
+  background-color: var(--sage-dark);
+  border-color: var(--sage-dark);
+}
+
+.btn-primary:hover {
+  background-color: var(--sage-darkest);
+  border-color: var(--sage-darkest);
+}
+
+/* Navbar link color tweaks so nav-links stay legible on the sage-dark bar */
+.navbar-dark .navbar-nav .nav-link {
+  color: var(--sage-lightest);
+  font-weight: bold;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover,
+.navbar-dark .navbar-nav .nav-link.active {
+  color: var(--accent);
+}
+
+/* -----------------------------
+   CLASS SELECTOR
+   Card tweaks (Bootstrap's .card component) — box model + shadow/radius
+   ----------------------------- */
+.card {
+  border: 1px solid var(--sage-light);      /* border */
+  border-radius: 10px;                      /* border-radius */
+  box-shadow: 0 2px 6px rgba(63, 74, 61, 0.15); /* shadow */
+  margin-bottom: 1rem;                      /* margin */
+  padding: 0.5rem;                          /* padding */
+}
+
+.card-title {
+  color: var(--sage-darkest);
+}
+
+/* -----------------------------
+   Accordion (Bootstrap component) recolored to match the palette
+   ----------------------------- */
+.accordion-button:not(.collapsed) {
+  background-color: var(--sage-light);
+  color: var(--sage-darkest);
+}
+
+.accordion-button:focus {
+  box-shadow: 0 0 0 0.2rem rgba(140, 154, 123, 0.4);
+}
+
+/* -----------------------------
+   Alert (Bootstrap component) recolored to match the palette
+   ----------------------------- */
+.alert-success {
+  background-color: var(--sage-lightest);
+  border-color: var(--sage-light);
+  color: var(--sage-darkest);
+}
+
+/* -----------------------------
+   CLASS SELECTOR
+   Custom badge color for the resume skills section
+   ----------------------------- */
+.badge.bg-sage {
+  background-color: var(--sage-dark) !important;
+}
+
+/* -----------------------------
+   Footer
+   ----------------------------- */
+footer {
+  color: var(--sage-lightest);
+}
+
+/* Resume-specific spacing */
+dl,
+address {
+  margin: 0.5rem 0;
+}
+
+dt {
+  font-weight: bold;
+  color: var(--sage-dark);
+}
