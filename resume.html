@@ -1,0 +1,109 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Resume - Meera Bipin</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../resources/css/styles.css">
+</head>
+<body>
+
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="home.html">Meera Bipin</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu"
+          aria-controls="navMenu" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navMenu">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link" href="home.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="hobbies.html">Hobbies</a></li>
+            <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
+            <li class="nav-item"><a class="nav-link active" aria-current="page" href="resume.html">Resume</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <div class="container mt-4">
+      <section id="resume">
+        <h1 class="mb-4">Resume</h1>
+
+        <div class="row g-4">
+          <div class="col-lg-8">
+
+            <article class="mb-4">
+              <h3>Contact</h3> <!-- the /h3 is an HTML Element -->
+              <address>
+                Email: <a href="mailto:you@example.com">meera.bipin@colorado.edu</a><br> <!--the href is the attribute name, and the email is the value.-->
+                Location: Boulder, Colorado
+              </address>
+            </article>
+
+            <article class="mb-4"> <!-- the article is the parent element, and the rest are child elements that are nested direcly inside the parent. -->
+              <h3>Education</h3>
+              <dl>
+                <dt>University of Colorado Boulder - College of Engineering and Applied Science</dt>
+                <dd>Bachelor of Science in Computer Science with minors in Buisness & Creative Technology and Design, and a certificate in Engineering Leadership, 2029</dd>
+              </dl>
+            </article>
+
+            <article class="mb-4">
+              <h3>Experience</h3>
+              <!-- Bootstrap List Group component for experience entries -->
+              <ul class="list-group">
+                <li class="list-group-item">
+                  <strong>Student UX Researcher</strong> — Office of Information Technology, University of Colorado Boulder, May 2026–Present
+                  <p class="mb-0">As a student UX researcher, I help the User Experience Team conduct, analyze, and summarize various research and testing which is an essential part of creating user accessible websites. I've helped conduct interviews with students regarding campus platforms, learning how we can better implement these systems to ensure things work efficiently.</p>
+                </li>
+                <li class="list-group-item">
+                  <strong>Resident Support Leader</strong> — Residence Life, University of Colorado Boulder, August 2026 - Present
+                  <p class="mb-0">Serve as a Resident Support Leader for on-campus university apartments! Ensure the safety of Residents and the building by completing on-rotation rounds and serving as a resource for students. </p>
+                </li>
+                <li class="list-group-item">
+                  <strong>Advancement Student Assistant</strong> — College of Engineering and Applied Science - University of Colorado Boulder, March 2026–August 2026
+                  <p class="mb-0">Support the CEAS Advancement and Alumni teams in regards to Donor Relations and Events. Prepare and format reports using Ascend, AI, and Excel database systems. Assist with administrative duties and prepare event materials.</p>
+                </li>
+              </ul>
+            </article>
+
+            <a class="btn btn-primary" href="Bipin_Meera_Resume (3).pdf" download>Download Resume (PDF)</a>
+          </div>
+
+          <div class="col-lg-4">
+            <article>
+              <h3>Skills</h3>
+              <!-- Bootstrap Badge component for skills -->
+              <div class="d-flex flex-wrap gap-2">
+                <span class="badge bg-sage">HTML &amp; CSS</span>
+                <span class="badge bg-sage">C++</span>
+                <span class="badge bg-sage">Adobe Photoshop</span>
+                <span class="badge bg-sage">Figma</span>
+                <span class="badge bg-sage">Public Speaking</span>
+                <span class="badge bg-sage">Technical Research and Writing</span>
+                <span class="badge bg-sage">Agile Workflows and Jira</span>
+              </div>
+            </article>
+          </div>
+        </div>
+
+      </section>
+    </div>
+  </main>
+
+ <footer class="bg-dark text-center py-3 mt-5">
+    <p class="mb-0">
+    &copy; 2026 Meera Bipin. All rights reserved. |
+    <a href="https://www.linkedin.com/in/meera-bipin">LinkedIn</a>
+</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
