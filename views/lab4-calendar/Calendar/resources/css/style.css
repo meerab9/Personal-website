@@ -1,0 +1,51 @@
+h1{
+    text-align: center;
+    padding-top: 2%;
+}
+body {
+    height: 100%;
+    background-color: #f2f2f2;
+  }
+  
+  .event:hover {
+    cursor: pointer;
+  }
+  
+  .hidden {
+    visibility: hidden;
+    height: 0;
+  }
+  
+  #calendar {
+    height: 100vh !important;
+  }
+
+.custom-container {
+    width: 100%;
+    padding: 20%;
+}
+
+.event-class{
+  background-color: #cfe2ff; /* light blue */
+  border-color: #9ec5fe !important;
+}
+
+.event-work {
+  background-color: #f8d7da; /* light red */
+  border-color: #f1aeb5 !important;
+}
+
+.event-personal {
+  background-color: #d1e7dd; /* light green */
+  border-color: #a3cfbb !important;
+}
+
+.event-social {
+  background-color: #fff3cd; /* light yellow */
+  border-color: #ffe69c !important;
+}
+
+.event-other {
+  background-color: #e2e3e5; /* light gray */
+  border-color: #c4c8cb !important;
+}
