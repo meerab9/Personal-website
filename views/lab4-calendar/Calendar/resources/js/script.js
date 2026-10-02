@@ -40,6 +40,8 @@ function saveEvent() {
 
   const modality = document.getElementById('event_modality').value;
 
+
+
   const eventDetails = {
     name: document.getElementById('event_name').value,
     weekday: document.getElementById('event_weekday').value,
